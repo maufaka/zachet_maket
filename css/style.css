@@ -1,3 +1,233 @@
 .container {
     width: 1920px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 40px 375px 40px 375px;
+    background-color: #555556;
+    background-image: url("../img/header-bg.jpg");
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    text-decoration: none;
+}
+
+.link-logo-svg {
+    fill: #fff;
+}
+
+.link-logo-txt {
+    color: #fff;
+    font-size: 34px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.link-logo:hover .link-logo-svg {
+    fill: #c7b299;
+}
+
+.link-logo:hover .link-logo-txt {
+    color: #c7b299;
+}
+
+.link-logo:active .link-logo-svg {
+    fill: #fff;
+}
+
+.link-logo:active .link-logo-txt {
+    color: #fff;
+}
+
+.menu {
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu-list {
+    display: inline-block;
+}
+
+.menu-list-link {
+    text-decoration: none;
+    display: block;
+    padding: 20px 15px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.menu-list-link:hover {
+    color: #c7b299;
+}
+
+.menu-list-link:active {
+    color: #ffffff;
+}
+
+.nav-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-cart {
+    display: block;
+    background-image: url("../img/icon-cart.png");
+    width: 18px;
+    height: 24px;
+    margin: 20px 15px 20px 55px;
+}
+
+.menu-search {
+    display: block;
+    background-image: url("../img/icon-search.png");
+    width: 24px;
+    height: 24px;
+    margin: 20px 15px 20px 15px;
+}
+
+.left-arrow {
+    display: block;
+    width: 40px;
+    height: 73px;
+    background-image: url("../img/left.png");
+    position: absolute;
+    left: -212px;
+}
+
+.left-arrow:hover {
+    background-image: url("../img/left-hover.png");
+}
+
+.left-arrow:active {
+    background-image: url("../img/left.png");
+}
+
+.header-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 285px 0 320px 0;
+    position: relative;
+}
+
+.header-slider-wrapper {
+    text-align: center;
+}
+
+.header-slider-title {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 34px;
+    margin: 0 0 15px 0;
+}
+
+.header-slider-title-bold {
+    color: #ffffff;
+    font-family: "Raleway";
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 50px;
+    margin: 0 0 15px 0;
+}
+
+.header-slider-txt {
+    display: block;
+    width: 562px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0 0 50px 0;
+}
+
+.btn-get-started {
+    display: flex;
+    margin: 0 auto;
+    width: 170px;
+    height: 53px;
+    border-radius: 3px;
+    background-color: #998675;
+    text-decoration: none;
+    border-bottom: 3px solid #736356;
+}
+
+.btn-get-started:hover {
+    background-color:  #736356;
+    border-bottom: 3px solid #998675;
+}
+
+.btn-get-started:active {
+    background-color: #998675;
+}
+
+.btn-get-started:hover .btn-get-started-txt {
+    color: #ccc;
+}
+
+.btn-get-started:active .btn-get-started-txt {
+    color: #fff;
+}
+
+.btn-get-started-txt {
+    margin: auto;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.right-arrow {
+    display: block;
+    width: 40px;
+    height: 73px;
+    background-image: url("../img/right.png");
+    position: absolute;
+    left: 1346px;
+}
+
+.right-arrow:hover {
+    background-image: url("../img/right-hover.png");
+}
+
+.right-arrow:active {
+    background-image: url("../img/right.png");
+}
+
+.pagination {
+    position: absolute;
+    top: 590px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-link {
+    display: block;
+    width: 10px;
+    min-height: 10px;
+    margin: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+.pagination-link:hover {
+    border: 2px solid #ccc;
+    background-color: transparent;
 }
