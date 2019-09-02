@@ -264,6 +264,7 @@ body {
     justify-content: space-between;
     box-sizing: border-box;
     color: #555555;
+    background-color: #fff;
 }
 
 .service-web {
@@ -314,4 +315,95 @@ body {
     font-weight: 300;
     line-height: 24px;
     margin: 20px 0 20px 0;
+}
+
+.ideas {
+    padding: 80px 375px 0 375px;
+    text-align: center;
+    position: relative;
+    background-color: #fbfaf8;
+}
+
+.ideas-title {
+    text-align: center;
+    color: #555555;
+    font-family: "Raleway";
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+}
+
+.ideas-txt {
+    display: block;
+    width: 760px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ideas-img-center {
+    margin: 40px 0 0 0;
+}
+
+.word-press {
+    padding: 50px 375px 50px 375px;
+    background-color: #241d1a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.word-press-wrp {
+
+}
+
+.word-press-title {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.word-press-title-waxom {
+    color: #c7b299;
+}
+
+.word-press-txt {
+    color: #615855;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 8px 0 0 0;
+}
+
+.btn-purchase-now {
+    display: flex;
+    width: 170px;
+    height: 53px;
+    border-radius: 3px;
+    background-color: #998675;
+    text-decoration: none;
+    border-bottom: 3px solid #736356;
+}
+
+.btn-purchase-now:hover {
+    background-color: #736356;
+    border-bottom: 3px solid #998675;
+}
+
+.btn-purchase-now:active {
+    background-color: #998675;
+}
+
+.btn-purchase-now:hover .btn-get-started-txt {
+    color: #ccc;
+}
+
+.btn-purchase-now:active .btn-get-started-txt {
+    color: #fff;
 }
