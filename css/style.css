@@ -349,8 +349,20 @@ body {
 .ideas {
     padding: 80px 375px 0 375px;
     text-align: center;
-    position: relative;
     background-color: #fbfaf8;
+}
+
+.ideas-wrp {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+    margin-top: 80px;
+}
+
+.ideas-img-center {
+    position: absolute;
+    top: -80px;
 }
 
 .ideas-title {
@@ -371,10 +383,12 @@ body {
     line-height: 28px;
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 .ideas-img-center {
-    margin: 40px 0 0 0;
+    display: block;
+    margin: auto;
 }
 
 .word-press {
@@ -383,10 +397,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.word-press-wrp {
-
 }
 
 .word-press-title {
@@ -433,4 +443,8 @@ body {
 
 .btn-purchase-now:active .btn-get-started-txt {
     color: #fff;
+}
+
+.latest-projects {
+    padding: 80px 375px 0 375px;
 }
