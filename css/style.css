@@ -38,7 +38,7 @@ body {
 }
 
 .header {
-    padding: 40px 375px 40px 375px;
+    padding: 40px 325px 40px 325px;
     background-color: #555556;
     background-image: url("../img/header-bg.jpg");
 }
@@ -46,10 +46,10 @@ body {
 .nav {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
 }
 
 .link-logo {
+    margin: 0 0 0 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,14 +113,18 @@ body {
 .nav-wrapper {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 0 0 70px;
 }
 
 .menu-cart {
     display: block;
     width: 18px;
     height: 24px;
-    margin: 20px 15px 20px 35px;
+    margin: 15px;
     fill: #fff;
+    outline: none;
+    border: none;
+    background-color: transparent;
 }
 
 .menu-cart:hover {
@@ -131,20 +135,27 @@ body {
     fill: #fff;
 }
 
-.menu-search {
-    display: block;
+input[type="search"] {
     width: 24px;
     height: 24px;
-    margin: 20px 15px 20px 25px;
-    fill: #fff;
+    outline: none;
+    background-image: url('../img/icon-search.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin: 15px 0 0 15px;
 }
 
-.menu-search:hover {
-    fill: #c7b299;
+input[type="search"]:hover {
+    filter: brightness(60%);
 }
 
-.menu-search:active {
-    fill: #fff;
+input[type="search"]:focus {
+    width: 150px;
+    transition: width 1s ease-out;
+    background-position: right;
+    background-color: white;
 }
 
 .left-arrow {
@@ -624,7 +635,7 @@ body {
 }
 
 .video-btn {
-    margin: 0 auto;
+    margin: auto;
     display: block;
     width: 100px;
     height: 100px;
@@ -632,11 +643,21 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.video-btn:hover {
+    filter: brightness(50%);
+}
+
+.video-btn:active .video-content {
+    display: none;
 }
 
 .video-btn-svg {
     fill: #fff;
-    padding: 15px;
 }
 
 .video-title {
