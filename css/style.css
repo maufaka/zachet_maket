@@ -531,14 +531,7 @@ input[type="search"]:focus {
 .latest-project-item {
     width: 370px;
     margin-bottom: 30px;
-}
-
-.latest-project-item:hover .article-btn-link {
-    display: block;
-}
-
-.latest-project-item:hover .article-btn-search {
-    display: block;
+    position: relative;
 }
 
 .latest-project-item:hover .latest-project-photo {
@@ -599,21 +592,25 @@ input[type="search"]:focus {
     padding: 15px 0 27px 30px;
 }
 
-.article-btn-link,
-.article-btn-search {
-    width: 26px;
-    height: 26px;
-    display: none;
-    position: absolute;
-    top: 45%
-}
-
 .article-btn-link {
-    left: 35%;
+    display: block;
+    position: absolute;
+    left: 170px;
+    top: 100px;
+    fill: #fff;
 }
 
 .article-btn-search {
-    right: 35%;
+    display: block;
+    position: absolute;
+    left: 201px;
+    top: 100px;
+    fill: #fff;
+}
+
+.article-btn-link,
+.article-btn-search:hover {
+    fill: #362f2d;
 }
 
 .video-wrp {
