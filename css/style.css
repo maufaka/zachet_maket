@@ -593,24 +593,32 @@ input[type="search"]:focus {
 }
 
 .article-btn-link {
-    display: block;
+    display: none;
     position: absolute;
-    left: 170px;
+    left: 135px;
     top: 100px;
     fill: #fff;
 }
 
 .article-btn-search {
-    display: block;
+    display: none;
     position: absolute;
     left: 201px;
     top: 100px;
     fill: #fff;
 }
 
-.article-btn-link,
+.article-btn-link:hover {
+    fill: #c7b299;
+}
+
 .article-btn-search:hover {
-    fill: #362f2d;
+    fill: #c7b299;
+}
+
+.latest-project-item:hover .article-btn-link,
+.latest-project-item:hover .article-btn-search {
+    display: block;
 }
 
 .video-wrp {
