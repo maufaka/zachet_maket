@@ -28,6 +28,12 @@
     src: url(../fonts/montserrat/montserrat-light.ttf);
 }
 
+@font-face {
+    font-family: montserrat-extralight;
+    src: url(../fonts/montserrat/montserrat-extralight.ttf);
+}
+
+
 body {
     margin: 0;
 }
@@ -689,5 +695,102 @@ input[type="search"]:focus {
     font-size: 14px;
     line-height: 24px;
     display: block;
+    text-align: center;
+}
+
+.mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.mobile-content {
+    width: 700px;
+    margin: 0 0 0 30px;
+}
+
+.mobile-content-title {
+    color: #555555;
+    font-family: raleway-semibold;
+    font-size: 30px;
+    margin: 110px 0 40px 0;
+}
+
+.mobile-content-txt {
+    color: #8c8c8c;
+    font-family: monserrat;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0;
+}
+
+.mobile-content-list {
+    list-style-type: none;
+    position: relative;
+    color: #8c8c8c;
+    font-family: monserrat-light;
+    font-size: 16px;
+    line-height: 32px;
+    margin-left: 100px;
+}
+
+.mobile-content-list:before {
+    background-image: url(../img/mobile-list.png);
+    display: block;
+    width: 21px;
+    height: 21px;
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -50px;
+}
+
+.statistics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #4e3427;
+}
+
+.statistics-block {
+    margin: 55px;
+    width: 135px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.statistics-block:after {
+    border-bottom: 2px solid #fff;
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+.statistics-icon {
+    fill: #c7b299;
+}
+
+.statistics-number {
+    color: #ffffff;
+    font-family: montserrat-extralight;
+    font-size: 48px;
+    line-height: 36px;
+    margin: 25px 0 25px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.statistics-name {
+    color: #c7b299;
+    font-family: montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
     text-align: center;
 }
