@@ -1206,3 +1206,68 @@ input[type="search"]:focus {
 .footer-bottom__info a:hover {
     color: darkorange;
 }
+
+@media screen and (max-width: 823px) {
+    html {
+        font-size: 14px;
+    }
+
+    .header-slider__main,
+    .header-slider__buttons,
+    .cart,
+    .search,
+    .about__content-wrapper,
+    .purchase,
+    .statistics,
+    .footer-content {
+        display: none;
+    }
+
+    .header-slider {
+        height: auto;
+    }
+
+    label {
+        display: block;
+        position: absolute;
+        top: 30%;
+        right: 4%;
+        z-index: 5;
+    }
+
+    .menu {
+        visibility: hidden;
+        width: 90%;
+        margin-left: -20%;
+        position: relative;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .menu ul {
+        background: url(../img/header-bg.jpg);
+        flex-direction: column;
+        position: absolute;
+        top: -42px;
+        left: 1%;
+        width: 112.5%;
+    }
+
+    .video {
+        max-height: 355px;
+    }
+
+    .video__button {
+        top: 40px;
+        left: 44%;
+    }
+
+    .video__poster-content h3 {
+        margin: 154px 0 15px;
+    }
+
+    .video__poster-content p {
+        margin: 0 15.625%;
+    }
+}
+
