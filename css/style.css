@@ -33,7 +33,6 @@
     src: url(../fonts/montserrat/montserrat-extralight.ttf);
 }
 
-
 body {
     margin: 0;
 }
@@ -55,7 +54,7 @@ body {
 }
 
 .link-logo {
-    margin: 0 0 0 50px;
+    margin: 0 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -755,7 +754,7 @@ input[type="search"]:focus {
 
 .statistics-block {
     margin: 55px;
-    width: 135px;
+    width: 140px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -785,7 +784,7 @@ input[type="search"]:focus {
 
 .statistics-name {
     color: #c7b299;
-    font-family: montserrat;
+    font-family: monserrat;
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
@@ -829,7 +828,6 @@ input[type="search"]:focus {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-
 }
 
 .recent-posts__post {
@@ -968,13 +966,17 @@ input[type="search"]:focus {
     fill: #d1d1d1;
 }
 
+.recent-posts__nav-wrapper > button:nth-child(1) > svg {
+    transform: scaleX(-1);
+}
+
 .recent-posts__nav:hover,
 .recent-posts__nav:active {
     fill: #c7b299;
 }
 
 .partners {
-    background: url(../img/footer-bg.jpg);
+    background: url(../img/partners-bg.jpg);
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
