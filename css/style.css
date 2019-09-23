@@ -1212,13 +1212,57 @@ input[type="search"]:focus {
     color: darkorange;
 }
 
-@media (max-width: 760px) {
-    html {
-        font-size: 14px;
-    }
+label {
+    display: none;
+}
 
+@media (max-width: 860px) {
     .container {
         width: 100%;
+    }
+
+    .header {
+        padding: 5%;
+    }
+
+    .nav {
+        position: relative;
+    }
+
+    .
+
+    .link-logo {
+        justify-content: left;
+    }
+
+    label {
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        z-index: 5;
+    }
+
+    .menu__closed {
+        margin: 10px 0 10px 0;
+        display: block;
+        width: 100%;
+        border-bottom: 6px solid white;
+    }
+
+    .menu {
+        visibility: hidden;
+        margin: 0 auto;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+
+    }
+
+    input[type="checkbox"]:checked ~ .menu {
+
     }
 
     .menu-cart,
@@ -1228,7 +1272,8 @@ input[type="search"]:focus {
     .word-press,
     .latest-project-menu,
     .latest-project-item,
-    .btn-get-started {
+    .btn-get-started,
+    .footer-content {
         display: none;
     }
 
@@ -1244,9 +1289,19 @@ input[type="search"]:focus {
         width: 100%;
     }
 
+    .video {
+        width: 100%;
+        object-fit: cover;
+    }
+
     .video-content {
         top: 223px;
         left: 159px;
+    }
+
+    .footer-bottom__wrapper,
+    .footer-bottom__info {
+        margin: 0 auto;
     }
 }
 
